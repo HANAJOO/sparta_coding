@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <title>1th_homework</title>
+    <style>
+        * {font-family: 'Sunflower', sans-serif;}
+        #wrap {
+            width: 700px; 
+            margin: 0 auto;
+        }
+        .img {
+            width: 700px; height: 600px;
+            margin: 10px auto;
+            background:url('https://postfiles.pstatic.net/MjAxOTA0MjdfMTQ0/MDAxNTU2Mjk0NjUwMTU1.m7AHKAS39JYV3wBDv0PqJ3S1h7DMtsDkOgCYvctmO58g.3JP1Pz4DkGkkvrPDe4212Rw3Z2vQZT_7Z52BA8GokNwg.JPEG.daejin4610/O1CN0137wDmj2G6w2JUKXcM_3672288967.jpg?type=w773') center center;
+            background-size: cover;
+        }
+        .tit_wrap {
+            margin-top: 40px;
+        }
+        .tit_wrap .tit {
+            display: inline-block;
+        }
+        .tit_wrap .price {
+            display: inline-block;
+        }
+        .tit_wrap .disc {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        .order {
+            width: 700px; height: 600px;
+            margin-top: 50px;
+            position: relative;
+        }
+        .btn {
+            display: block;
+            margin: auto;
+            width: 150px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="img"></div>
+        <div class="tit_wrap">
+            <h1 class="tit">찰리브라운&스누피 키링</h1>
+            <p class="price">가격: 4,000원 / 1PC</p>
+            <p class="disc">
+                에어팟, 가방, 핸드폰 등에 달면 귀여움이 배가되는 찰리브라운&스누피 키링입니다!<br>
+                주문서에 맞게 제작되는 상품으로 튼튼하면서도 퀄리티가 좋은 제품이에요.
+            </p>
+        </div>
+        <div class="order">
+            <h2>주문하기</h2>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">주문자 성함</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">제품선택</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>찰리브라운</option>
+                      <option>스누피</option>
+                      <option>파일럿스누피</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">수량</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">주소</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">전화번호</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                <button onclick="done()" type="submit" class="btn btn-primary mb-2">주문하기</button>
+        </div>
+    </div>
+    <script>
+        function done() {
+            alert('주문이 완료되었습니다!');
+        }
+    </script>
+</body>
+</html>
