@@ -53,6 +53,9 @@
         }
     </style>
     <script>
+        $(document).ready(function(){
+            alert('다 로딩됐다!')
+        });
         function done() {
             let name = $('#name').val();
             let item = $('#item').val();
@@ -70,6 +73,8 @@
                 alert('주소를 입력해주세요');
             } else if (num == '' ){
                 alert('휴대폰번호를 입력해주세요');
+            } else {
+                alert('주문이 완료되었습니다')
             }
         }
         window.onload=function(){
