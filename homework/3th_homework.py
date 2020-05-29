@@ -13,12 +13,8 @@ music_list = soup.select('#body-content > div.newest-list > div > table > tbody 
 
 rank = 0
 for music in music_list:
-    a_tag = music.select_one('td.info > a')
     rank += 1
+    albumtitle = music.select_one('td.info > a.title.ellipsis').text.strip()
+    artist = music.select_one('td.info > a.artist.ellipsis').text
 
-    if a_tag is not None:
-        albumtitle = a_tag.text.strip()
-        # number = music.select_one('td.number').text.strip()
-        
-        
-        print(rank, albumtitle)
+    print(rank, albumtitle,artist)
